@@ -78,3 +78,6 @@ public/images/profile.jpg
 *.tmp
 *.temp
 .cache
+
+*.code-workspace
+.windsurfrules
