@@ -1,0 +1,2 @@
+1. When using PS (PowerShell) commands for Node.js, use `npm.cmd` instead of `npm`
+2. When using PS (PowerShell) to create directories, separate single commands with a semicolon e.g. `mkdir dir1; mkdir dir2`

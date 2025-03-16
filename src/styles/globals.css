@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme colors */
+    --color-primary-light: 59, 130, 246;    /* #3B82F6 */
+    --color-primary-light-hover: 37, 99, 235;  /* #2563EB */
+    --color-secondary-light: 16, 185, 129;  /* #10B981 */
+    --color-accent-light: 245, 158, 11;   /* #F59E0B */
+    --color-background-light: 255, 255, 255; /* #FFFFFF */
+    --color-surface-light: 243, 244, 246;   /* #F3F4F6 */
+    --color-text-light: 31, 41, 55;         /* #1F2937 */
+    
+    /* Dark theme colors */
+    --color-primary-dark: 96, 165, 250;    /* #60A5FA */
+    --color-primary-dark-hover: 59, 130, 246;  /* #3B82F6 */
+    --color-secondary-dark: 52, 211, 153;  /* #34D399 */
+    --color-accent-dark: 251, 191, 36;    /* #FBBF24 */
+    --color-background-dark: 17, 24, 39;   /* #111827 */
+    --color-surface-dark: 31, 41, 55;      /* #1F2937 */
+    --color-text-dark: 249, 250, 251;      /* #F9FAFB */
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background-light dark:bg-background-dark text-textColor-light dark:text-textColor-dark;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section {
+    @apply py-12 md:py-20;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 md:mb-12;
+  }
+  
+  .card {
+    @apply bg-surface-light dark:bg-surface-dark rounded-lg shadow-md overflow-hidden transition-all;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-light hover:bg-primary-light-hover text-white dark:bg-primary-dark dark:hover:bg-primary-dark-hover;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-light hover:bg-opacity-90 text-white dark:bg-secondary-dark;
+  }
+  
+  .btn-outline {
+    @apply border border-primary-light text-primary-light hover:bg-primary-light hover:text-white dark:border-primary-dark dark:text-primary-dark dark:hover:bg-primary-dark;
+  }
+}

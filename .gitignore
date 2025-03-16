@@ -1,0 +1,80 @@
+# Node.js dependencies
+/node_modules
+/npm-debug.log
+/yarn-error.log
+/yarn-debug.log
+/.pnp
+.pnp.js
+.npm
+
+# Next.js build output
+/.next/
+/out/
+/build
+/.swc/
+next-env.d.ts
+.vercel
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache and logs
+.cache/
+.eslintcache
+.stylelintcache
+.turbo
+.vercel
+
+# Testing
+/coverage
+/.nyc_output
+/cypress/videos/
+/cypress/screenshots/
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# TailwindCSS
+/tailwind.output.css
+
+# User-specific files
+public/images/profile.jpg
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+.cache
